@@ -1,4 +1,5 @@
 
+
 // variables
 var $win = $(window);
 var clientWidth = $win.width();
@@ -58,4 +59,4 @@ function timeElapse(date){
 	var text = "THE WORLD JUST GOT LUCKIER SINCE ";
 	$("#message-box").html(text);
 
-			}
+}
