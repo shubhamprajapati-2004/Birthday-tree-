@@ -78,7 +78,9 @@ $("#error").show();
 return false;
 }
 
-var width = canvas.width = canvas.height();
+// FIXED: Define height properly
+var height = canvas.height(); // Get the canvas height
+var width = canvas.width; // Keep the original width
 
 canvas.attr("width", width);
 canvas.attr("height", height);
@@ -108,7 +110,7 @@ branch:[
 [590,293,646,277,648,271,2,80]
 ]]
 ]]
-],
+},
 
 bloom:{
 num:700,
@@ -239,4 +241,4 @@ runAsync().start();
 </script>
 
 </body>
-	</html>
+</html>
